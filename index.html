@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FundiSA</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500&family=Tangerine&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="light-background">
+    <!--  Navigation Bar Header  -->
+
+    <header id="header">
+      <input id="nav-toggle" type="checkbox" />
+      <div class="flex-logo">
+        <img id="header-img" src="images/logo.png" alt="brand-image" />
+        <h1 class="brand-name">FundiSA</h1>
+      </div>
+      <nav id="nav-bar">
+        <div class="links-container">
+          <ul class="navbar-nav">
+            <li>
+              <a class href="#"
+                ><button class="blue-btn home-btn">Home</button></a>
+            </li>
+            <li class="other-link">
+              <a onClick="changeColor();" id="link" class="nav-link" href="#">About</a>
+            </li>
+            <li class="other-link">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="other-link">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="other-link">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+            <li class="other-link">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="other-link" style="color: aliceblue;">
+              <a class="nav-link" onclick="logIn()">Login</a>
+            </li>
+            <li class="other-link" style="color: aliceblue; ">
+              <a class="nav-link" onclick="signUp()">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <label for="nav-toggle" class="icon-burger"
+        ><i class="fas fa-bars toggle-button"></i
+      ></label>
+    </header>
+
+    <!-- Product Section -->
+
+    <section id="product" class="dark-background">
+      <div class="search-box">
+        <input type="text" placeholder="Type to search..." />
+        <button class="search-btn" type="submit">
+          <i class="fa fa-search search-icon"></i>
+        </button>
+      </div>
+      <div class="product-container">
+        <div class="product-left">
+          <h1 class="main-heading">
+            We Empower South African Youth in the World of Tech
+          </h1>
+          <p class="paragraph-heading">
+            Innovation, Collaboration and Creativity - WITH FUNDISA YOU CAN HAVE
+            IT ALL. A platform that equips the next generation with much needed
+            web and software development skills.
+          </p>
+
+          <div class="about-btn">
+            <a class="button-link" href="#" target="_blank">
+              <button class="white-btn read-btn">Get Started</button></a
+            >
+
+           <a class="button-link" href="#video-section"
+              ><button data-modal-target="#video" class="video-btn">Watch Video</button></a
+            >
+
+            <div id="video" class="video" id="video">
+
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/VfGW0Qiy2I0" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+              gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button data-close-button title="Close" class="close-button">&times;</button>
+
+            </div>
+
+           <div id="overlay"></div>
+          </div>
+        </div>
+        <div class="product-right">
+          <img src="images/logo.png" alt="logo-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+
+    <section id="features">
+      <h2 class="feature-heading">Why Choose FundiSA?</h2>
+      <section class="features-container container">
+        <div class="feature-box">
+          <span class="icon fas fa-money-bill-wave-alt"></span>
+
+          <h3 class="feature-title">Free</h3>
+          <p class="feature-par">
+            Learn the latest tech skills at no cost to you.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <span class="icon fas fa-lightbulb"></span>
+          <h3 class="feature-title">Easy to Use</h3>
+          <p class="feature-par">
+            Our platform has been designed to offer the best user-experience.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <span class="icon fas fa-laptop-code"></span>
+          <h3 class="feature-title">Interactive</h3>
+          <p class="feature-par">
+            Ensures that students are able to code more efficiently.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <span class="icon fas fa-user-friends"></span>
+          <h3 class="feature-title">Discussion Forums</h3>
+          <p class="feature-par">
+            With our Tech Mentors and other students, help is always on the way.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!--  Service Section -->
+    
+    <section id="service" class="transparent-section">
+      <h2 class="sub-heading service-heading">What We Offer</h2>
+      <div class="service-grid-container">
+        <div class="service-card">
+          <span class="grid-image"><i class="fab fa-html5"></i></span>
+          <h3>HTML 5</h3>
+          <p>
+               HTML is the language in which most websites are written. HTML is
+                used to create pages and make them functional.
+          </p>
+          <button class="white-btn">Read More</button>
+        </div>
+        <div class="service-card">
+          <span class="grid-image"><i class="fab fa-css3-alt"></i></i></span>
+          <h3>CSS 3</h3>
+          <p>
+             Cascading Style Sheets (CSS) is a simple mechanism for adding
+            style (e.g., fonts, colors, spacing) to Web documents.
+          </p>
+
+          <button class="white-btn">Read More</button>
+        </div>
+
+        <div class="service-card">
+          <span class="grid-image"><i class="fab fa-js-square"></i></i></span>
+          <h3>Javascript</h3>
+          <p>
+             JavaScript (JS) is a lightweight, interpreted, or just-in-time
+            compiled programming language with first-class functions.
+          </p>
+
+          <button class="white-btn">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+
+    <section id="blog" class="dark-section">
+      <div class="blog-container container">
+        <div class="blog-left">
+          <img src="images/code.jpg" alt="tea-image" />
+        </div>
+        <div class="blog-right">
+          <h2 class="sub-heading">SA's E-Learning Mission for Youth</h2>
+          <p>
+            Slow and steadily, global education prepared for a staged transition
+            into online learning. The defined time frame was a decade in order
+            to maximise efficiencies and tweak technology to suit the makeup of
+            the digital natives
+          </p>
+
+          <div class="blog-btn">
+            <a class="button-link" href="#" target="_blank">
+              <button class="blog-button">Read More</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsor Section -->
+
+    <section id="sponsors">
+      <h2 class="sponsor-heading">Our Sponsors</h2>
+      <section class="sponsor-container container">
+        <div class="sponsor-box">
+          <img src="images/microsoft.jpg" width="300" height="170" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="images/amazon.png" alt="" />
+        </div>
+
+        <div class="sponsor-box">
+          <img src="images/google.jpeg" width="300" height="180" alt="" />
+        </div>
+
+         <div class="sponsor-box">
+          <img src="images/cisco.jpg" width="300" height="178" alt="" />
+        </div>
+      </section>
+    </section>
+
+        <!-- Subscribe Section -->
+    <section id="subscribe" class="transparent-section">
+      <div class="subscribe-container">
+        <div class="subscribe-left">
+          <div class="subscribe-card">
+            <h2 class="sub-heading heading">Subscribe to our Newsletter</h2>
+
+            <p class="subscribe-paragraph">
+              For the latest updates on FundiSA, subscribe to our newsletter today.
+            </p>
+            <form
+              action="https://www.freecodecamp.com/email-submit"
+              id="form"
+              target="_blank"
+            >
+              <input
+                name="email"
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+              <input type="submit" id="submit" class="submit-btn" />
+            </form>
+          </div>
+        </div>
+        <div class="subscribe-right">
+          <img src="images/logo.png" alt="tea-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Account Code-->
+    <div id="log_box" class="modal"> <!-- Log IN-->
+      <div class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('log_box').style.display='none'" class="close" title="Close Modal">&times;</span>
+         
+        </div>
+        <h2 class="text-center">Login</h2>
+      <input type="text" id="username" class="form-control" placeholder="Email">
+      <input type="password" id="password" class="form-control" placeholder="Password">
+      <button id="btnLogin" class="btn btn-dark form-btn btn-block">CLICK</button>
+      <div class="alert alert-danger mt-3" role="alert" id="danger" style="display: none"></div>
+      <div class="alert alert-success mt-3" role="alert" id="success" style="display: none"></div>
+      </div>
+      
+    </div>
+    <div id="reg_box" class="modal"> <!-- Register-->
+      <div class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('reg_box').style.display='none'" class="close" title="Close Modal">&times;</span>
+         
+        </div>
+       <form onsubmit="regSubmit()" action="dashboard.htm" >
+        <input type="text" id="regName" class="form-control" placeholder="Name:" required>
+        <input type="text" id="regSurname" class="form-control" placeholder="Surname" required>
+        <input type="email" id="regEmail" class="form-control" placeholder="Email" required>
+       <!-- <input type="password" id="regPassword" class="form-control" placeholder="Password">
+        <input type="password" id="conPassword" class="form-control" placeholder="Confirm Password"> -->
+        <select id="courses" name="courses"  title="Select which coures you are interested in learning" required>
+          <option value="" disabled selected>Select your option</option>
+          <option value="webdevelopment">Web Development</option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="other">Other</option>
+        </select><br><br>
+        <!--<button id="btnNext" class="btn btn-dark form-btn btn-block">NEXT</button> -->
+        <input type="submit">
+       </form>
+        
+      
+      </div>
+      
+    </div>
+
+
+  
+    <!-- End Account Code-->
+
+    <!-- Footer Section -->
+
+    <footer>
+      <div class="footer-brand">
+        <img id="header-img" src="images/logo.png" alt="brand-image" />
+        <h2 class="footer-logo">FundiSA</h2>
+      </div>
+      <div class="social-icons">
+        <ul>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <a href="https://twitter.com/?lang=en" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <a href="https://za.pinterest.com/" target="_blank"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+
+          <a href="https://www.youtube.com/?gl=ZA" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </ul>
+      </div>
+      <p class="footer-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna.
+      </p>
+
+      <p class="copyright">© Copyright 2021 FundiSA</p>
+    </footer>
+    <script type="text/javascript" src="js/control.js"></script>
+  </body>
+</html>

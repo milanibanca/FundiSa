@@ -1,0 +1,277 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="dash.css">
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+</head>
+<body onload="dashLoad2()" id="dash">
+<div id="message">
+<p id="text"></p>
+</div>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                    <!-- <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span> -->
+                    <img src="images/logo.png" alt="FundiSA Logo" width="50" height="50">
+                    <span class="title"><h2>FundiSA</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                    <span class="title">Community</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                    <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                    <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                    <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-key" aria-hidden="true"></i></span>
+                    <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="signOut()">
+                    <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                    <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
+                <div class="search">
+                    
+                    <input type="text" placeholder="Search here">
+                       <label for=""><i class="fa fa-search" aria-hidden="true"></i> </label>           
+                </div>
+                <div>
+                <!-- <i class="fas fa-user-circle"></i> --> 
+                    <!-- <img src="" alt="image of user"> -->
+                    <p id="udetails"></p>
+                </div>
+        </div>
+
+        <div class="cardBox">
+            <div id="welcome" class="card" style="width: 250px;">
+                <div>
+                   
+                
+                    <div class="numbers" id="dashmess"></div>
+                    <div class="cardName">Welcome back:</div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="numbers">
+                        <a href="quiz.html">Learn Html & css</a>
+                    </div>
+                    <!--<div class="cardName">Active Courses</div>-->
+                </div>
+                <br>
+
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">
+                        <a href="https://www.w3schools.com" >Learn Python</a>
+                    </div>
+                    <!--<div class="cardName">Active Courses</div>-->
+                </div>
+ 
+            </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">Learn JavaScript</div>
+                    <!--<div class="cardName">Code Projects</div>-->
+                    </div>
+
+            </div> 
+            <div class="card">
+                <div>
+                    <div class="numbers">Certificates</div>
+                    <!--<div class="cardName"></div>-->
+                    </div>
+            </div> 
+            <div class="card">
+                <div>
+                    <div class="numbers">0</div>
+                    <div class="cardName">Followers</div>
+                    </div>
+            </div> 
+        </div>
+        
+        <div class="details">
+            <div class="courseProgress">
+                <div class="cardHeader">
+                    <p id="userName"></p>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                          <td>Name</td>  
+                          <td>Start date</td>
+                          <td>Level</td>
+                          <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td>HTML</td>
+                          <td>18/05/21</td>
+                          <td>3</td>
+                          <td><span class="status on-going">On-going</span></td>
+                      </tr>  
+                      <tr>
+                            <td>CSS</td>
+                            <td>4/07/21</td>
+                            <td>10</td>
+                            <td><span class="status completed">Completed</span></td>
+                       </tr>
+                       <tr>
+                            <td>JavaScript</td>
+                            <td>1/07/21</td>
+                            <td>0</td>
+                            <td><span class="status not-started">Not started</span></td>
+                       </tr>
+                        <tr>
+                            <td>ReactJS</td>
+                            <td>1/07/21</td>
+                            <td>0</td>
+                            <td><span class="status not-started">Not started</span></td>
+                        </tr>   
+                        <tr>
+                            <td>HTML</td>
+                            <td>18/05/21</td>
+                            <td>3</td>
+                            <td><span class="status on-going">On-going</span></td>
+                        </tr>  
+                        <tr>
+                              <td>CSS</td>
+                              <td>4/07/21</td>
+                              <td>10</td>
+                              <td><span class="status completed">Completed</span></td>
+                         </tr>
+                         <tr>
+                              <td>JavaScript</td>
+                              <td>1/07/21</td>
+                              <td>0</td>
+                              <td><span class="status not-started">Not started</span></td>
+                         </tr>
+                          <tr>
+                              <td>ReactJS</td>
+                              <td>1/07/21</td>
+                              <td>0</td>
+                              <td><span class="status not-started">Not started</span></td>
+                          </tr>   
+                    </tbody>
+                </table>
+            </div>
+            <div class="recentAchievements">
+                <div class="cardHeader">
+                    <h2>Recent Achievements</h2>
+                </div>
+                <table>
+                   <tbody>
+                       <tr>
+                           <!-- <td><div>Put in an image or icon herer</div></td> -->
+                          <!-- <td><h4>Name of course with some span</h4></td>  -->
+                       </tr>
+                   </tbody> 
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+         function dashLoad() {
+             email = localStorage.getItem("email"),
+             name = localStorage.getItem("name"),
+             surname = localStorage.getItem("surname");
+
+            document.getElementById("udetails").innerHTML = email;
+            document.getElementById("userName").innerHTML = name +" " +surname;
+
+  }
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+
+    function dashLoad2() {
+    let status = localStorage.getItem("status");
+    if(status != "loggedIn")
+    {
+        location.replace("index.html");
+        alert("Log In first");
+      
+    }
+    else
+    {
+        email = localStorage.getItem("email"),
+             name = localStorage.getItem("name"),
+             surname = localStorage.getItem("surname");
+
+            document.getElementById("udetails").innerHTML = email;
+            document.getElementById("dashmess").innerHTML = name +" " +surname; 
+    }
+
+  }
+
+  function signOut()
+  {
+    localStorage.setItem("status","loggedOut");
+    location.replace("index.html");
+
+  }
+    </script>
+    
+    
+</body>
+</html>
